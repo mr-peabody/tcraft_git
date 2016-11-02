@@ -1,0 +1,8 @@
+Notes:
+
+Use web fonts instead
+Icons on the bottom aren't aligned with the text above
+Label Layers
+Fonts in PSD don't match the style guide
+Compress images
+Icons weren't ready to use

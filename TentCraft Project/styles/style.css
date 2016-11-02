@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('fonts/Avenir-Black.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Avenir-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Avenir-Black.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('fonts/Avenir-Book.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Avenir-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Avenir-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+html {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#253746;
+	font-family: Sans-Serif;
+	margin:0;
+	padding:0;
+}
+
+a {text-decoration:none;}
+
+/*Header*/
+header {
+	background:white;
+	height:125px;
+}
+
+#headerContentWrapper {
+	height:85px;
+	margin:auto;
+	max-width:1250px;
+	padding:20px 0;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+
+}
+
+#bannerImageWrapper {
+	float:left;
+	width:35%;
+	height:75px;
+}
+
+#bannerImageWrapper a {
+	margin:0;
+	padding:0;
+	height:85px;
+}
+
+#bannerImageWrapper img {
+	height:85px;
+	width:auto;
+	-ms-transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+#bannerImageWrapper img:hover {
+	-ms-transition:scale(1.05);
+	-webkit-transition:scale(1.05);
+	transform:scale(1.05);
+}
+
+#navWrapper {
+	text-align: right;
+}
+
+
+header nav {
+	font-family:'Avenir-Book', Sans-Serif;
+	font-size:1.75em;
+}
+
+header nav ul{
+	float:right;
+	height:75px;
+	margin:0;
+	padding:0;
+	table-layout:fixed;
+	width:100%;
+}
+
+header nav ul li {
+	display:inline-block;
+	list-style:none;
+	margin-left:1em;
+}
+
+header nav ul li a, a:visited {color:#253746;}
+
+header nav ul li a:hover {
+	background:#7C878E;
+	color:white;
+	border-radius:10px;
+	padding:2px 5px;
+}
+
+/*Section*/
+#bodyWrapper {
+	background:rgb(37, 55, 70);
+	background:url('../images/bg.jpg');
+	background-size:cover;
+	clear:both;
+	min-height: 650px;
+	width:100%;
+}
+
+#bodyContentWrapper {
+	margin:auto;
+	max-width: 1250px;
+}
+
+#bodyContentWrapper #callToAction {
+	display:inline-block;
+	color:white;
+	margin:20% 0 0 0;
+}
+
+#bodyContentWrapper #actionLarge {
+	font-family: "Avenir-Black", Sans-Serif;
+	font-size: 4.1em;
+	line-height: 1;
+	text-transform:uppercase;
+}
+
+#bodyContentWrapper #actionSmall {
+	font-family: "Avenir-Book", Sans-Serif;
+	font-size: 2em;
+}
+
+#bodyContentWrapper #formWrapper {
+	background:#253746;
+	color:white;
+	float:right;
+	margin:5% 0 0 0;
+	padding:2%;
+	width:450px;
+}
+
+#bodyContentWrapper #formWrapper #formHeader {
+	font-family: "Avenir-Black", Sans-Serif;
+	font-size: 3.25em;
+	line-height: 1;
+	text-transform:uppercase;
+}
+
+#bodyContentWrapper #formWrapper #formInstructions {
+	font-family: "Avenir-Book", Sans-Serif;
+	font-size: 1.25em;
+	padding:10px 0;
+}
+
+#bodyContentWrapper #formWrapper input[type=text] {
+	border:0;
+	color:#253746;
+	font-size:1.25em;
+	margin: .8em 0;
+	padding:3%;
+	width:94%;
+}
+
+::-webkit-input-placeholder {color: #C1C6C8;}
+:-moz-placeholder {color: #C1C6C8;}
+::-moz-placeholder {color: #C1C6C8;}
+:-ms-input-placeholder {color: #C1C6C8;}
+
+#bodyContentWrapper #formWrapper button {
+	background:#7C878E;
+	border: none;
+	border-radius: 10px;
+	color:white;
+	float:right;
+	font-family: "Avenir-Book", Sans-Serif;
+	font-size: 1em;
+	margin:1.6em 0;
+	padding:3% 9%;
+}
+
+#bodyContentWrapper #formWrapper button:hover {
+	background:#D69A2D;
+	cursor:pointer;
+	-ms-transition:scale(1.05);
+	-webkit-transition:scale(1.05);
+	transform:scale(1.05);
+}
+
+/*Footer*/
+footer {background:#253746;}
+
+#footerContentWrapper {
+	color:white;
+	margin:auto;
+	max-width:1250px;
+}
+
+#footerContentWrapper {
+	color:white;
+}
+
+#footerContentWrapper #footerLeft #footerLeftSmall {
+	font-family: "Avenir-Book", Sans-Serif;
+	font-size: 1.25em;
+	-ms-transform:translateY(150%);
+	-webkit-transform:translateY(150%);
+	transform:translateY(150%);
+
+}
+
+#footerContentWrapper #footerLeft #footerLeftLarge {
+	font-family: "Avenir-Black", Sans-Serif;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+#footerContentWrapper #footerLeft img {
+	padding-left:10px;
+	-ms-transform:translateY(25%);
+	-webkit-transform:translateY(25%);
+	transform:translateY(25%);
+}
+
+#footerContentWrapper #bookContainer {
+	display:table;
+}
+
+#footerContentWrapper #bookContainer ul {
+	display:table-cell;
+}
